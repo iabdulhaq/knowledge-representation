@@ -1,0 +1,25 @@
+The alarm sounds iff motion is detected or a window is broken
+If there is an intruder, then motion is detected
+If the alarm sounds, then the guard responds
+There is an intruder
+A window is not broken
+
+# Test Case 1.1: Entailed (True)
+# alpha1_1 = "The alarm sounds"
+# Result: True
+# Reason: Intruder is True -> Motion is detected -> (Motion or Broken) is True -> Alarm sounds.
+
+# Test Case 1.2: Entailed (True)
+# alpha1_2 = "The guard responds"
+# Result: True
+# Reason: Alarm sounds -> Guard responds.
+
+# Test Case 1.3: Not Entailed (False)
+# alpha1_3 = "A window is broken"
+# Result: False
+# Reason: Explicitly contradicted by "A window is not broken".
+
+# Test Case 1.4: Not Entailed (False)
+# alpha1_4 = "There is no intruder"
+# Result: False
+# Reason: Explicitly contradicted by "There is an intruder".

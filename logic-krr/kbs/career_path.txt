@@ -1,0 +1,30 @@
+If I pass the exam, then I graduate
+I get a job iff I graduate
+If I get a job, then I celebrate or I save money
+I pass the exam
+I do not save money
+
+# Test Case 2.1: Entailed (True)
+# alpha2_1 = "I graduate"
+# Result: True
+# Reason: "I pass the exam" is True -> "I graduate" is True via Modus Ponens.
+
+# Test Case 2.2: Entailed (True)
+# alpha2_2 = "I get a job"
+# Result: True
+# Reason: "I graduate" is True <-> "I get a job" is True via Biconditional.
+
+# Test Case 2.3: Entailed (True)
+# alpha2_3 = "I celebrate"
+# Result: True
+# Reason: "I get a job" is True -> ("I celebrate" or "I save money") is True. Since "I do not save money" is True, "I celebrate" must be True by Disjunctive Syllogism.
+
+# Test Case 2.4: Not Entailed (False)
+# alpha2_4 = "I save money"
+# Result: False
+# Reason: Explicitly false in the KB.
+
+# Test Case 2.5: Not Entailed (False)
+# alpha2_5 = "I do not pass the exam"
+# Result: False
+# Reason: Directly contradicts fact "I pass the exam".
