@@ -1,0 +1,2 @@
+rdd, cache
+Machine learning relies on algorithms and statistics.
